@@ -1,0 +1,32 @@
+name = "Quilt Mod"
+description = "A template for QuiltMC Minecraft mods"
+
+[[inputs]]
+id = "project_name"
+type = "string"
+
+prompt = "What is the name of the project?"
+
+[[inputs]]
+id = "use_github_ci"
+type = "bool"
+
+prompt = "Setup GitHub Actions for CI?"
+
+[[inputs]]
+id = "initialize_git"
+type = "bool"
+
+prompt = "Initialize Git repository?"
+
+[[files]]
+path = ".github"
+only_if = "use_github_ci"
+
+[[files]]
+path = ".gitignore"
+only_if = "initialize_git"
+
+[[after]]
+command = "git init"
+only_if = "initialize_git"

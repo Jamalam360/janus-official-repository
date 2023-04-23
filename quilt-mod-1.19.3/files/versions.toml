@@ -1,0 +1,23 @@
+[versions]
+minecraft = "1.19.3"
+quilt-mappings = "1.19.3+build.23"
+quilt-loader = "0.18.3-pre.2"
+quilted-fabric-api = "5.0.0-beta.7+0.75.1-1.19.3"
+mod-menu = "5.1.0-beta.4"
+lazy-dfu = "0.1.3"
+
+[libraries]
+minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
+quilt-mappings = { module = "org.quiltmc:quilt-mappings", version.ref = "quilt-mappings" }
+quilt-loader = { module = "org.quiltmc:quilt-loader", version.ref = "quilt-loader" }
+quilted-fabric-api = { module = "org.quiltmc.quilted-fabric-api:quilted-fabric-api", version.ref = "quilted-fabric-api" }
+
+mod-menu = { module = "com.terraformersmc:modmenu", version.ref = "mod-menu" }
+
+lazy-dfu = { module = "maven.modrinth:lazydfu", version.ref = "lazy-dfu" }
+
+[bundles]
+quilt = ["quilt-loader", "quilted-fabric-api"]
+required = []
+optional = ["mod-menu"]
+runtime = ["lazy-dfu"]
