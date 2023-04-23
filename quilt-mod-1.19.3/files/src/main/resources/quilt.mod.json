@@ -19,7 +19,7 @@
     },
     "intermediate_mappings": "net.fabricmc:intermediary",
     "entrypoints": {
-      "init": "com.example.${{ mod_id }}.${{ main_class }}"
+      "init": "com.example.${{ mod_id }}.${{ main_class_name }}"
     },
     "depends": [
       {

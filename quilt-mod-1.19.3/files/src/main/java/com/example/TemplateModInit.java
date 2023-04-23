@@ -22,20 +22,17 @@
  * THE SOFTWARE.
  */
 
-package io.github.jamalam360.templatemod;
+package com.example.${{ mod_id}};
 
-import io.github.jamalam360.jamlib.log.JamLibLogger;
 import net.minecraft.util.Identifier;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 
-public class TemplateModInit implements ModInitializer {
-    public static final String MOD_ID = "templatemod";
-    public static final JamLibLogger LOGGER = JamLibLogger.getLogger(MOD_ID);
+public class ${{ main_class_name }} implements ModInitializer {
+    public static final String MOD_ID = "${{ mod_id }}}}";
 
     @Override
     public void onInitialize(ModContainer mod) {
-        LOGGER.logInitialize();
     }
 
     public static Identifier idOf(String path) {

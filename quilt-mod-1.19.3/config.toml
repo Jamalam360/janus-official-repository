@@ -2,10 +2,34 @@ name = "Quilt Mod"
 description = "A template for QuiltMC Minecraft mods"
 
 [[inputs]]
-id = "project_name"
+id = "mod_name"
 type = "string"
 
-prompt = "What is the name of the project?"
+prompt = "What is the name of your mod?"
+
+[[inputs]]
+id = "mod_id"
+type = "string"
+
+prompt = "What is the ID of your mod?"
+
+[[inputs]]
+id = "mod_description"
+type = "string"
+
+prompt = "What is the description of your mod?"
+
+[[inputs]]
+id = "main_class_name"
+type = "string"
+
+prompt = "What is the name of your main class?"
+
+[[inputs]]
+id = "mod_source"
+type = "string"
+
+prompt = "What is the repository URL of your mod?"
 
 [[inputs]]
 id = "use_github_ci"
